@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="logindustrijasa">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="Gojek"/>
+                <xs:element ref="Grab"/>
+                <xs:element ref="Laundry"/>
+                <xs:element ref="Taksi"/>
+                <xs:element ref="Uber"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Gojek">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode">
+                	<xs:simpleType>
+                		<xs:restriction base="xs:NCName">
+                			<xs:minLength value="4"></xs:minLength>
+                			<xs:maxLength value="8"></xs:maxLength>
+                			<xs:pattern value=".+"></xs:pattern>
+                			<xs:whiteSpace value="collapse"></xs:whiteSpace>
+                			<xs:pattern value=".+"></xs:pattern>
+                		</xs:restriction>
+                	</xs:simpleType>
+                </xs:element>
+                <xs:element ref="driver"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="trfhrg">
+                	<xs:simpleType>
+                		<xs:restriction base="xs:integer">
+                			<xs:maxExclusive value="50000"></xs:maxExclusive>
+                			<xs:pattern value=".+"></xs:pattern>
+                		</xs:restriction>
+                	</xs:simpleType>
+                </xs:element>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="nohp"/>
+                <xs:element ref="asal"/>
+                <xs:element ref="tujuan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Grab">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode"/>
+                <xs:element ref="driver"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="trfhrg"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="nohp"/>
+                <xs:element ref="asal"/>
+                <xs:element ref="tujuan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Laundry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode"/>
+                <xs:element ref="nama"/>
+                <xs:element ref="pemilik"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="nohp"/>
+                <xs:element ref="hrg"/>
+                <xs:element ref="email"/>
+                <xs:element ref="no"/>
+                <xs:element ref="tahunbuka"/>
+                <xs:element ref="kurir"/>
+                <xs:element ref="harikrj"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nama" type="xs:string"/>
+    <xs:element name="pemilik" type="xs:NCName"/>
+    <xs:element name="hrg" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:element name="no" type="xs:string"/>
+    <xs:element name="tahunbuka" type="xs:integer"/>
+    <xs:element name="kurir" type="xs:NCName"/>
+    <xs:element name="harikrj" type="xs:NCName"/>
+    <xs:element name="Taksi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode"/>
+                <xs:element ref="driver"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="trfhrg"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="nohp"/>
+                <xs:element ref="asal"/>
+                <xs:element ref="tujuan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Uber">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode"/>
+                <xs:element ref="driver"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jk"/>
+                <xs:element ref="trfhrg"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="nohp"/>
+                <xs:element ref="asal"/>
+                <xs:element ref="tujuan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="kode" type="xs:NCName"/>
+    <xs:element name="driver" type="xs:NCName"/>
+    <xs:element name="alamat" type="xs:NCName"/>
+    <xs:element name="jk" type="xs:NCName"/>
+    <xs:element name="trfhrg" type="xs:integer"/>
+    <xs:element name="agama" type="xs:NCName"/>
+    <xs:element name="pekerjaan" type="xs:NCName"/>
+    <xs:element name="nohp" type="xs:integer"/>
+    <xs:element name="asal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pt"/>
+                <xs:element ref="kodewil"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pt" type="xs:string"/>
+    <xs:element name="kodewil" type="xs:integer"/>
+    <xs:element name="tujuan" type="xs:string"/>
+</xs:schema>
