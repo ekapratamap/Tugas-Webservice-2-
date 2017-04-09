@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?> 	
+<logindustrijasa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jasa.xsd">
+<Gojek>
+<kode>G1243</kode>
+				<driver>Nanang</driver>
+				<alamat>bandung</alamat>
+				<jk>Laki-laki</jk>
+				<trfhrg>15000</trfhrg>
+				<agama>islam</agama>
+				<pekerjaan>driver</pekerjaan>
+				<nohp>085237384625</nohp>
+				<asal>
+					<pt>gojek indonesia</pt>
+					<kodewil>465</kodewil>
+				</asal>
+				<tujuan>Wilayah Bandung</tujuan>
+	
+</Gojek>
+<Grab>
+<kode>G2347</kode>
+				<driver>Kevin</driver>
+				<alamat>bandung</alamat>
+				<jk>Laki-laki</jk>
+				<trfhrg>20000</trfhrg>
+				<agama>islam</agama>
+				<pekerjaan>driver</pekerjaan>
+				<nohp>085242425365</nohp>
+				<asal>
+					<pt>grab indonesia</pt>
+					<kodewil>089</kodewil>
+				</asal>
+				<tujuan>Wilayah Bandung</tujuan>
+
+</Grab>
+<Laundry>
+<kode>L7346</kode>
+				<nama>Napuri Laundry</nama>
+				<pemilik>Sulmiati</pemilik>
+				<alamat>bandung</alamat>
+				<nohp>085283567125</nohp>
+				<hrg>7000/kg</hrg>
+				<email>napurilaundry@gmail.com</email>
+				<no>Kode Baju Pelanggan</no>
+				<tahunbuka>2014</tahunbuka>
+				<kurir>Bayu</kurir>
+				<harikrj>Senin-Sabtu</harikrj>
+
+</Laundry>
+<Taksi>
+<kode>T3689</kode>
+				<driver>Kurniawan</driver>
+				<alamat>bandung</alamat>
+				<jk>Laki-laki</jk>
+				<trfhrg>20000</trfhrg>
+				<agama>islam</agama>
+				<pekerjaan>driver</pekerjaan>
+				<nohp>085534576345</nohp>
+				<asal>
+					<pt>taksi indonesia</pt>
+					<kodewil>905</kodewil>
+				</asal>
+				<tujuan>Wilayah Bandung</tujuan>
+
+</Taksi>
+<Uber>
+<kode>U9865</kode>
+				<driver>Sanjaya</driver>
+				<alamat>bandung</alamat>
+				<jk>Laki-laki</jk>
+				<trfhrg>20000</trfhrg>
+				<agama>islam</agama>
+				<pekerjaan>driver</pekerjaan>
+				<nohp>085567890456</nohp>
+				<asal>
+					<pt>uber indonesia</pt>
+					<kodewil>231</kodewil>
+				</asal>
+				<tujuan>Wilayah Bandung</tujuan>
+
+</Uber>
+</logindustrijasa>
